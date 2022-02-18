@@ -1,0 +1,218 @@
+html { 
+  background: url(../illustration/tbilisi-background.svg) no-repeat center center fixed  ; 
+
+  background-size: cover;
+}
+
+@keyframes ufo {
+/*movement*/
+  0%   {left:200px; }
+  25%  {left:800px; }
+  50%  {left:800px; }
+  75%  {left:200px; }
+  100% {left:0px; }
+/*visible*/
+
+  95% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+
+.ufo{
+/*size*/
+  width: 500px;
+  height: 500px;
+
+  /*animation*/
+animation-name: ufo;
+animation: ufo 16s;
+
+position: relative;
+animation-fill-mode: forwards;
+
+}
+
+
+.cow {
+/*size*/
+width: 400px;
+height: 400px;
+/*position*/
+position: fixed;
+left:840px;
+z-index: 6;
+/*animation*/
+animation-name: cow;
+animation-fill-mode: top;
+ animation: cow 3s;
+ animation: cow 3.5s forwards;
+ animation-delay:  3.5s;
+
+
+}
+
+
+@keyframes cow {
+
+ from {bottom: 100px;}
+  to {bottom: 600px;}
+   0%   {opacity: 1;}
+   90%  {opacity: 1;}
+   100% {opacity: 0;}
+}
+
+
+
+
+
+.ufo-light {
+  z-index: 5;
+
+position: fixed;
+
+top: 125px;
+left: 850px;
+width: 400px;
+height: 300px;
+
+/*animation*/
+animation-name: ufolight;
+ animation: ufolight 8s;
+ animation: ufolight 8s forwards;
+ animation-delay:  0s;
+
+ 
+
+
+
+}
+
+@keyframes ufolight {
+ 0%   {opacity: 0;}
+  20%  {opacity: 0;}
+  40%  {opacity: 0;}
+ 70%  {opacity: 1;}
+   90%  {opacity: 1;}
+   91%  {opacity: 1;}
+   97%  {opacity: 1;}
+   100% {opacity: 0;}
+    
+}
+
+
+.ufolightbottom {
+
+position: fixed;
+width: 600px;
+left:740px;
+top: 560px;
+/*animation*/
+animation-name: ufolight;
+ animation: ufolight 8s;
+ animation: ufolight 8s forwards;
+ animation-delay:  0s;
+}
+
+
+@keyframes ufolightbottom {
+
+ 0%   {opacity: 0;}
+  20%  {opacity: 0;}
+  40%  {opacity: 0;}
+ 70%  {opacity: 1;}
+   90%  {opacity: 1;}
+   91%  {opacity: 1;}
+   97%  {opacity: 1;}
+   100% {opacity: 0;}
+
+}
+
+
+
+.text-buble{
+width: 400px;
+
+position: fixed;
+left:620px;
+animation-name: text-buble;
+animation-fill-mode: top;
+ animation: text-buble 5s;
+ animation: text-buble 5s forwards;
+ animation-delay:  0s;
+
+
+}
+
+@keyframes text-buble {
+
+
+  0%   {opacity: 0;}
+  20%  {opacity: 0;}
+  40%  {opacity: 0;}
+ 70%  {opacity: 1;}
+   90%  {opacity: 0;}
+   91%  {opacity: 0;}
+   97%  {opacity: 0;}
+   100% {opacity: 0;}
+    }
+
+    .ufo2 {
+   /*positons*/
+    position: fixed;
+    width: 300px;
+    right: 5px;
+    bottom: 250px;
+
+   /*animation*/
+  animation-name: ufo2;
+  animation: ufo2 5s;
+  animation-fill-mode: forwards;
+    }
+
+    @keyframes ufo2 {
+/*movement*/
+ from  {bottom: 250px; right: 10px;}
+  to {bottom: 800px; right: 350px;}
+}
+
+.ufo3 {
+/*position*/
+ position: fixed;
+    width: 300px;
+    left: 250px;
+    bottom: 50px;
+/*animation*/
+animation-name: ufo3;
+animation: ufo3 2s;
+animation-fill-mode: forwards;
+animation-delay: 1s;
+
+  }
+
+    @keyframes ufo3 {
+/*movement*/
+ from  {bottom: 50px; left: 250px;}
+  to {bottom: 645px; left: 400px;}
+}
+
+.ufolight2{
+/*position*/
+position: fixed;
+    width: 100px;
+    left: 350px;
+    bottom: 290px;
+    /*animation*/
+    animation-name: ufolight2;
+animation: ufolight2 4s;
+animation-fill-mode: forwards;
+animation-delay: 1s;
+
+}
+
+@keyframes ufolight2 {
+   1% {opacity: 1;}
+   15% {opacity: 0;}
+   100% {opacity: 0;}
+
+
+}
